@@ -1,92 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>He Yang | Ph.D. Student | UGA</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px auto;
-            max-width: 900px;
-            line-height: 1.6;
-        }
-        h1 {
-            font-size: 32px;
-            margin-bottom: 5px;
-        }
-        h2 {
-            border-bottom: 2px solid #222;
-            padding-bottom: 3px;
-            margin-top: 40px;
-        }
-        .contact {
-            margin-bottom: 20px;
-        }
-        a {
-            color: #0645AD;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .section {
-            margin-bottom: 30px;
-        }
-        ul {
-            margin-top: 5px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <title>He Yang | Ph.D. Student | UGA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      line-height: 1.6;
+      color: #222;
+      background-color: #f5f5f5;
+    }
+    .page {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 30px 15px;
+      box-sizing: border-box;
+    }
+    .card {
+      background: #ffffff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      border-radius: 10px;
+      padding: 25px;
+      display: flex;
+      gap: 30px;
+    }
+    .sidebar {
+      flex: 0 0 260px;
+      border-right: 1px solid #eee;
+      padding-right: 20px;
+    }
+    .main {
+      flex: 1;
+      min-width: 0;
+    }
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: #ddd;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      color: #666;
+    }
+    h1 {
+      font-size: 28px;
+      margin: 0 0 5px 0;
+    }
+    h2 {
+      font-size: 20px;
+      margin-top: 24px;
+      margin-bottom: 8px;
+      border-bottom: 2px solid #333;
+      padding-bottom: 4px;
+    }
+    h3 {
+      font-size: 16px;
+      margin: 12px 0 4px;
+    }
+    .title {
+      font-size: 15px;
+      font-weight: 500;
+      color: #555;
+      margin-bottom: 10px;
+    }
+    .contact p {
+      margin: 3px 0;
+      font-size: 14px;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul {
+      margin-top: 4px;
+      padding-left: 20px;
+    }
+    .tagline {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 8px;
+    }
+    .pub-list li {
+      margin-bottom: 6px;
+    }
+    .highlight {
+      font-weight: 600;
+    }
+    .badge {
+      display: inline-block;
+      padding: 2px 7px;
+      border-radius: 999px;
+      background: #eef3ff;
+      color: #334;
+      font-size: 11px;
+      margin-left: 6px;
+    }
+    .news-list li {
+      margin-bottom: 4px;
+    }
+    @media (max-width: 800px) {
+      .card {
+        flex-direction: column;
+      }
+      .sidebar {
+        border-right: none;
+        border-bottom: 1px solid #eee;
+        padding-right: 0;
+        padding-bottom: 15px;
+      }
+    }
+  </style>
 </head>
-
 <body>
+  <div class="page">
+    <div class="card">
+      <!-- 左侧侧边栏 -->
+      <aside class="sidebar">
+        <div class="avatar">
+          Photo
+        </div>
 
-<h1>He Yang</h1>
-<div class="contact">
-    Ph.D. Student, School of Electrical & Computer Engineering<br>
-    University of Georgia, Athens, GA, USA <br>
-    Email: zy1576544643@gmail.com  |  Website: https://yourname.github.io <br>
-</div>
+        <h1>He Yang</h1>
+        <div class="title">Ph.D. Student, Electrical & Computer Engineering</div>
+        <div class="tagline">
+          Intelligent Power Electronics and Electric Machine Lab (IPEM Lab)<br />
+          University of Georgia
+        </div>
 
-<h2>About Me</h2>
-<p>
-I am a Ph.D. student in the Intelligent Power Electronics and Electric Machine Lab (IPEM Lab) 
-at the University of Georgia. My research focuses on 
-<strong>cyber-physical security, anomaly detection, contrastive learning, motor drive systems,</strong> 
-and <strong>power electronics control</strong>.  
-I work on bridging real-world hardware testbeds with physics-guided machine learning algorithms.
-</p>
+        <div class="contact">
+          <p><strong>Email:</strong> zy1576544643@gmail.com</p>
+          <p><strong>Web:</strong> <a href="https://yourusername.github.io">yourusername.github.io</a></p>
+          <p><strong>Address:</strong><br />
+          Boyd Research Center, 200 D.W. Brooks Dr.<br />
+          Athens, GA 30602, USA</p>
+        </div>
 
-<h2>Research Interests</h2>
-<ul>
-    <li>Cyber-Physical Security of Electric Drives</li>
-    <li>Contrastive Learning for Anomaly Detection</li>
-    <li>Smart Plug Sensing and Edge Computing</li>
-    <li>Digital Twins for Power Electronics</li>
-    <li>Fault Diagnosis & Motor Control</li>
-</ul>
+        <h3>Research Interests</h3>
+        <ul>
+          <li>Cyber-physical security of electric drives</li>
+          <li>Contrastive learning for anomaly detection</li>
+          <li>Smart-plug sensing & PCC monitoring</li>
+          <li>Digital twins for power electronics</li>
+          <li>Fault diagnosis and motor control</li>
+        </ul>
 
-<h2>Selected Publications</h2>
-<ul>
-    <li><strong>H. Yang</strong> and J. Ye, “Detection of Cyber Attacks in Networked Electric Drives via Physics-Guided Contrastive Learning with Few-Shot Labels,” APEC 2026.</li>
-    <li><strong>H. Yang</strong>, “Detecting Low-Intensity Cyber Attacks in Electric Drives via Contrastive Few-Shot Learning,” IEEE TPEL, 2025.</li>
-    <li><strong>H. Yang</strong> et al., “Real-World Cyber Security Demonstration for Networked Electric Drives,” IEEE JESTPE, 2025.</li>
-    <li>S. Wu, <strong>H. Yang</strong> et al., “Online Adaptive Anomaly Detection…,” IEEE IoT Journal, 2025.</li>
-</ul>
+        <h3>Download CV</h3>
+        <p>
+          <a href="CV_HeYang.pdf" target="_blank">Curriculum Vitae (PDF)</a>
+        </p>
+      </aside>
 
-<h2>Projects</h2>
-<ul>
-    <li>Physics-Guided Contrastive Learning Framework for Cyber-Attack Detection</li>
-    <li>Digital Twin for Dual-Motor Networked Electric Drives</li>
-    <li>Smart Plug Sensing Platform for PCC Monitoring</li>
-    <li>Adaptive Anomaly Detection Algorithms for Electrical Machines</li>
-</ul>
+      <!-- 右侧正文区域 -->
+      <main class="main">
+        <h2>About</h2>
+        <p>
+          I am a Ph.D. student in the School of Electrical &amp; Computer Engineering at the University of Georgia,
+          working with <strong>Prof. Jin Ye</strong> in the Intelligent Power Electronics and Electric Machine Lab (IPEM Lab).
+          My research lies at the intersection of <strong>power electronics, electric drives, and machine learning</strong>,
+          with a particular focus on cyber-physical security and anomaly detection of networked electric drives.
+        </p>
+        <p>
+          My work combines <strong>physics-guided modeling</strong>, <strong>contrastive learning</strong>, and
+          <strong>real-time experiments</strong> on hardware testbeds to detect and mitigate cyber-attacks and faults in
+          electric machine drive systems.
+        </p>
 
-<h2>CV</h2>
-<p>
-You can download my full CV here:  
-<a href="CV_HeYang.pdf" target="_blank">Download CV (PDF)</a>
-</p>
+        <h2>News</h2>
+        <ul class="news-list">
+          <li><strong>2026:</strong> Our paper on physics-guided contrastive learning for cyber-attack detection in networked electric drives is accepted for <span class="highlight">APEC 2026</span> (poster presentation).<span class="badge">APEC 2026</span></li>
+          <li><strong>2025:</strong> Our work on low-intensity cyber-attack detection in electric drives is accepted by <span class="highlight">IEEE Transactions on Power Electronics (TPEL)</span>.<span class="badge">TPEL</span></li>
+          <li><strong>2025:</strong> Demonstration of real-world cyber security for networked electric drives appears in <span class="highlight">IEEE JESTPE</span>.<span class="badge">JESTPE</span></li>
+        </ul>
 
+        <h2>Selected Publications</h2>
+        <ul class="pub-list">
+          <li>
+            <strong>H. Yang</strong> and J. Ye, “Detection of Cyber Attacks in Networked Electric Drives via
+            Physics-Guided Contrastive Learning with Few-Shot Labels,” in <em>Proc. IEEE Applied Power Electronics
+            Conference and Exposition (APEC)</em>, San Antonio, TX, USA, 2026. (Poster)
+          </li>
+          <li>
+            <strong>H. Yang</strong> and J. Ye, “Detecting Low-Intensity Cyber Attacks in Electric Drives via Contrastive Few-Shot Learning,”
+            <em>IEEE Transactions on Power Electronics</em>, 2025.
+          </li>
+          <li>
+            <strong>H. Yang</strong> et al., “Real-World Cyber Security Demonstration for Networked Electric Drives,”
+            <em>IEEE Journal of Emerging and Selected Topics in Power Electronics</em>, 2025.
+          </li>
+          <li>
+            S. Wu, <strong>H. Yang</strong> et al., “Online Adaptive Anomaly Detection in Networked Electrical Machines by Adaptive
+            Enveloped Singular Spectrum Transformation,” <em>IEEE Internet of Things Journal</em>, 2025.
+          </li>
+        </ul>
+
+        <h2>Projects</h2>
+        <ul>
+          <li><strong>Physics-Guided Contrastive Learning for Cyber-Attack Detection</strong> – Contrastive few-shot framework combining simulation and experimental data for detecting subtle cyber-attacks in electric drives.</li>
+          <li><strong>Smart Plug–Based PCC Monitoring</strong> – Data-driven methods for estimating battery SoC and system anomalies from PCC measurements using low-cost smart-plug sensors.</li>
+          <li><strong>Digital Twin for Networked Electric Drives</strong> – Real-time digital twin testbed for multi-motor systems under cyber-attack and fault conditions.</li>
+        </ul>
+
+        <h2>Teaching & Service (Optional)</h2>
+        <p>
+          You can add teaching assistantships, mentoring, outreach, or service here if needed.
+        </p>
+
+        <h2>Contact</h2>
+        <p>
+          For collaboration or questions, feel free to email me at
+          <a href="mailto:zy1576544643@gmail.com">zy1576544643@gmail.com</a>.
+        </p>
+      </main>
+    </div>
+  </div>
 </body>
 </html>
